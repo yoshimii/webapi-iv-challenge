@@ -21,4 +21,4 @@ Todos is a string. Completed is a bool.
 
 ## Local Server
 
-Make requests to localhost:5000
+Make requests to localhost:5000/api/todos
