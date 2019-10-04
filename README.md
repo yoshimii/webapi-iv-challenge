@@ -1,15 +1,24 @@
-# Web API IV Challenge
+### Not the Last Todo App!
+## Web Deployment and Best Practices - Project
 
-In this challenge, you will **deploy** an API of your choosing to `heroku`.
+## Database Persistence Helpers
+..* find() : gets all todos stored in the database
+..* findById() : gets the todo by id
+..* insert() : posts a todo to db and returns the posted todo with id
+..* update() : puts edited todo body found by id and returns the changes and id
+..* remove() : deletes todo by id
 
-## Instructions
+## Table
+Todos Table and Sample Values:
 
-You are allowed, and **encouraged**, to collaborate with other peers. Please follow the twenty-minute rule, before seeking support from your PM and Instructor.
+Todos is a string. Completed is a bool.
 
-## Minimum Viable Product
+| Todos         | Completed     |
+| ------------- |:-------------:|
+| bake bread    | true          |
+| make todo list| true          |
+| finish sprint | false         |
 
-Pick any API, could be one of your past projects, and deploy it to `heroku`. Once deployed, send the URL to the TL for your group.
+## Local Server
 
-## Stretch Goal
-
-- add support for environment variables using `.env` files. You can use the [dotenv](https://www.npmjs.com/package/dotenv) npm module.
+Make requests to localhost:5000
