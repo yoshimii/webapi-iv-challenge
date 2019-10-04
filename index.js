@@ -1,11 +1,13 @@
 const express = require('express');
-const server = express();
+const server = require('./server');
 
-server.get('/', (req, res) => {
-    res.status(200).json({ Welcome: "TO MY SERVER" })
-});
+require('dotenv').config();
 
-const port = process.env.PORT || 5000;
+const dbPort = process.env.DB_PORT;
+
+server.use(express.json());
+
+const port = process.env.PORT || dbPort || 4000;
 
 server.listen(port, () => {
     console.log(`API running on ${port}`)
