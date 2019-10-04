@@ -8,8 +8,8 @@
 ..* update() : puts edited todo body found by id and returns the changes and id
 ..* remove() : deletes todo by id
 
-## Table
-Todos Table and Sample Values:
+## Table 
+### Todos Table and Sample Values:
 
 Todos is a string. Completed is a bool.
 
